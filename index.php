@@ -1,12 +1,11 @@
-<?php
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Home | Projecting</title>
+</head>
 
-//START SESSION
-session_start();
-
-//IF SESSION IS ACTIVE REDIRECT
-if ($_SESSION['active'] == true) {
-	header('Location: ../projecting/dashboard/dashboard.php');
-} else {
-	header('Location: ../projecting/login/login.php');
-}
-?>
+<body>
+	<a href="login/login.php">Login</a>
+</body>
+</html>

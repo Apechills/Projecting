@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 	<head>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
@@ -9,9 +9,14 @@
 		<title>Projecting Web-App</title>
 	</head>
 	<body>
+		<?php
+			if($_GET['a'] == '001') {
+				echo '<div class="alert alert-danger" role="alert">Email or password incorrect</div>';
+			}
+		?>
 		<div id="login" class="container">
 			<form id="login" action="login_process.php" method="post">
-				<input name="name" class="form-control" type="text">
+				<input name="email" class="form-control" type="email">
 				<input name="password" class="form-control" type="password">
 				<button class="btn btn-primary" type="submit">Log in</button>
 			</form>
